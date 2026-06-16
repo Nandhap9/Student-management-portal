@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet"
+href="styles.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Student Panel</h2>
+
+<ul>
+
+<li>
+<a href="student-dashboard.html">
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="student-profile.html">
+My Profile
+</a>
+</li>
+
+<li>
+<a href="#attendance">
+Attendance
+</a>
+</li>
+
+<li>
+<a href="#marks">
+Marks
+</a>
+</li>
+
+<li>
+<a href="#fees">
+Fees
+</a>
+</li>
+
+<li>
+<button id="logoutBtn">
+Logout
+</button>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>Student Dashboard</h1>
+
+<div class="cards">
+
+<div class="card" id="attendance">
+<h3>Attendance</h3>
+<p>92%</p>
+</div>
+
+<div class="card" id="marks">
+<h3>Marks</h3>
+<p>480 / 500</p>
+</div>
+
+<div class="card" id="fees">
+<h3>Fees Status</h3>
+<p>Paid</p>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js">
+
+if(
+localStorage.getItem("role")
+!== "student"
+){
+
+window.location.href =
+"index.html";
+
+}
+
+</script>
+
+</body>
+</html>

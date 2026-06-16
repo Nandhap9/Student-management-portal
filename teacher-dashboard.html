@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Teacher Dashboard</title>
+
+<link rel="stylesheet"
+href="styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Teacher Panel</h2>
+
+<ul>
+
+<li>
+<a href="teacher-dashboard.html">
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="add-student.html">
+Add Student
+</a>
+</li>
+
+<li>
+<a href="student-profile.html">
+Student Profile
+</a>
+</li>
+
+<li>
+<a href="setting.html">
+Settings
+</a>
+</li>
+
+<li>
+<button id="logoutBtn">
+Logout
+</button>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>Teacher Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Students</h3>
+<p>520</p>
+</div>
+
+<div class="card">
+<h3>Attendance</h3>
+<p>92%</p>
+</div>
+
+<div class="card">
+<h3>Assignments</h3>
+<p>25</p>
+</div>
+
+<div class="card">
+<h3>Courses</h3>
+<p>15</p>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js">
+
+if(
+localStorage.getItem("role")
+!== "teacher"
+){
+
+window.location.href =
+"index.html";
+
+}
+
+</script>
+</body>
+</html>
